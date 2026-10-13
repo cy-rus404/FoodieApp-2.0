@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8410F721307EA6D9007BF015 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410F720307EA6D9007BF015 /* CheckoutView.swift */; };
 		8438ABC530799A3B00B3FB62 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438ABC430799A3B00B3FB62 /* DetailView.swift */; };
 		8438ABC73079A11E00B3FB62 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438ABC63079A11E00B3FB62 /* CartView.swift */; };
 		8491C82C30794CDA0014AEDD /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C82B30794CDA0014AEDD /* FoodieApp.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8410F720307EA6D9007BF015 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		8438ABC430799A3B00B3FB62 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		8438ABC63079A11E00B3FB62 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		8491C82830794CDA0014AEDD /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 				8438ABC430799A3B00B3FB62 /* DetailView.swift */,
 				8491C867307964790014AEDD /* FoodCard.swift */,
 				8491C869307964B10014AEDD /* HomeView.swift */,
+				8410F720307EA6D9007BF015 /* CheckoutView.swift */,
 			);
 			path = Foodie;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				8491C85E30794DCD0014AEDD /* SplashScreen.swift in Sources */,
 				8491C8623079618A0014AEDD /* Components.swift in Sources */,
+				8410F721307EA6D9007BF015 /* CheckoutView.swift in Sources */,
 				8491C85630794D2E0014AEDD /* Theme.swift in Sources */,
 				8491C864307961B20014AEDD /* LoginView.swift in Sources */,
 				8491C85A30794D880014AEDD /* LogoView.swift in Sources */,

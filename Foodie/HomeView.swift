@@ -137,7 +137,7 @@ struct HomeView: View {
                 .environmentObject(store)
         }
         .sheet(isPresented: $showCart) {
-            CartView(onCheckout: { showCart = false })
+            CartView(onFinish: { showCart = false })
                 .environmentObject(store)
         }
     }
@@ -342,7 +342,7 @@ struct HomeView: View {
                     .frame(width: 30, height: 30)
                     .background(Color.white)
                     .clipShape(Circle())
-                Text("View cart")
+                Text("View cart")   
                     .font(.system(size: 16, weight: .semibold))
                 Spacer()
                 Text(money(store.total))

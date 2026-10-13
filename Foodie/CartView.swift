@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CartView: View {
-    var onCheckout: () -> Void = {}
+    var onFinish: () -> Void = {}
 
     @EnvironmentObject var store: AppStore
     @Environment(\.dismiss) private var dismiss
@@ -9,6 +9,7 @@ struct CartView: View {
     @State private var code = ""
     @State private var codeInvalid = false
     @State private var shake: CGFloat = 0
+    @State private var showCheckout = false
     @State private var appeared = false
     @FocusState private var codeFocused: Bool
 
@@ -57,6 +58,13 @@ struct CartView: View {
             }
         }
         .onAppear { appeared = true }
+        .fullScreenCover(isPresented: $showCheckout) {
+            CheckoutView(onFinish: {
+                showCheckout = false
+                onFinish()
+            })
+            .environmentObject(store)
+        }
     }
 
     private var header: some View {
@@ -294,7 +302,7 @@ struct CartView: View {
     private var checkoutBar: some View {
         Button {
             codeFocused = false
-            onCheckout()
+            showCheckout = true
         } label: {
             HStack {
                 Text("Go to checkout")
